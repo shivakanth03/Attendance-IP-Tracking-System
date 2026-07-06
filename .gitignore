@@ -1,0 +1,122 @@
+# ============================================================
+# Smart Attendance & Network Verification System - .gitignore
+# ============================================================
+
+# ===========================
+# Java / Maven
+# ===========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Spring Boot
+# ===========================
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-local.properties
+
+# ===========================
+# Node.js / React
+# ===========================
+node_modules/
+dist/
+build/
+.npm
+*.tgz
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ===========================
+# Environment Files
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ===========================
+# IDE / Editor
+# ===========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===========================
+# Uploads (generated files)
+# ===========================
+uploads/profile-images/*
+uploads/qr-codes/*
+uploads/reports/*
+uploads/documents/*
+!uploads/profile-images/.gitkeep
+!uploads/qr-codes/.gitkeep
+!uploads/reports/.gitkeep
+!uploads/documents/.gitkeep
+
+# ===========================
+# Database backups
+# ===========================
+database/backup/*.sql
+
+# ===========================
+# QR code temp files
+# ===========================
+backend/src/main/resources/qr/*.png
+
+# ===========================
+# OS Generated
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Testing
+# ===========================
+coverage/
+.nyc_output
+
+# ===========================
+# Docker
+# ===========================
+.docker/
